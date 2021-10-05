@@ -1,7 +1,9 @@
+/* GLOBAL */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .clearfix{
@@ -10,6 +12,7 @@
   clear: both;
 }
 
+/* HEADER */
 header{
   float: right;
   background-color: rgba(0, 0, 0, .7);
@@ -19,6 +22,29 @@ header{
   height: 100px;
 }
 
+.upgrade{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn{
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.btn p{
+  padding: 10px 35px;
+  font-weight: bold;
+}
+
+/* SIDEBAR */
 #sidebar{
   float: left;
   height: calc(100vh - 100px);
@@ -27,6 +53,7 @@ header{
   color: grey;
 }
 
+/* MAIN */
 main{
   float: left;
   width: calc(100vw - 200px);
@@ -35,6 +62,7 @@ main{
   overflow: auto;
 }
 
+/* FOOTER */
 footer{
   float: left;
   width: 100vw;
