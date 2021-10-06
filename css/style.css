@@ -184,18 +184,19 @@ aside{
 
 /* CONTENUTO */
 .content{
-  float: left;
   background-color: #141922;
   overflow: auto;
   width: calc(100% - 250px);
   height: 100%;
 }
 
+/* NAV CONTENUTO */
 .scopri-list{
-  margin-top: 8%;
+  margin-top: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -232,18 +233,23 @@ aside{
   font-size: 20px;
 }
 
+/* PLAYLISTS */
 .row{
-  margin: 0 1%;
-  width: 98%;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .slot{
   text-align: center;
+  width: 15%;
 }
 
 .slot img{
-  justify-content: space-around;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
   cursor: pointer;
 }
 
