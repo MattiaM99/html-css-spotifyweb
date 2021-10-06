@@ -20,6 +20,7 @@
 /* HEADER */
 header{
   position: fixed;
+  z-index: 999;
   float: right;
   background-color: rgba(0,0,0,.9);
   width: calc(100% - 250px);
@@ -225,9 +226,10 @@ aside{
   margin-bottom: 2%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.recent h1{
+h1{
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -245,13 +247,39 @@ aside{
 .slot{
   text-align: center;
   width: 15%;
+  margin: 0 10px;
 }
 
 .slot img{
-  width: 250px;
-  height: 250px;
-  background-size: cover;
+  width: 100%;
   cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container .player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+}
+
+.image-container:hover .player {
+  display: block;
+  background: rgba(0, 0, 0, .6);
+}
+
+.fa-play-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
 }
 
 .slot h2{
@@ -265,11 +293,126 @@ aside{
   font-size: 10px;
 }
 
+.bottom-content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.bottom-content p{
+  color: grey;
+  font-size: 15px;
+}
+
 /* FOOTER */
 footer{
-  float: left;
-  width: 100vw;
+  width: 100%;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
   background-color:#282828;
 }
 
+/* FOOTER LEFT */
+.footer-left{
+  margin-left: 1%;
+  width: 19%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.img-player{
+  width: 15%;
+  margin-right: 10px;
+}
+.img-player img{
+  width: 100%;
+}
+
+.nome-brano{
+  flex-direction: column;
+}
+
+.nome-brano h2{
+  color: white;
+  font-size: 15px;
+}
+
+.nome-brano p{
+  color: grey;
+  font-size: 12px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 13%;
+}
+
+.icons ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  align-items: center;
+}
+
+.icons ul li i{
+  color: grey;
+  margin-left: 10px;
+}
+
+/* FOOTER CENTER */
+.footer-center{
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+  display: flex;
+}
+
+.footer-center ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.footer-center ul li{
+  text-align: center;
+  padding: 15px;
+}
+
+.footer-center ul li i{
+  font-size: 25px;
+}
+
+/* FOOTER RIGHT */
+
+.footer-right{
+  width: 19%;
+  margin-right: 1%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-right ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.footer-right ul li{
+  text-align: center;
+  padding: 15px;
+}
