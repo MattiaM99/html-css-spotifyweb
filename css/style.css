@@ -514,83 +514,7 @@ footer{
   }
 }
 
-/* RESPONSIVE XS <576 PX */
-@media screen and (max-width: 575px) {
-  .scopri-list{
-    height: 100px;
-    align-content: center;
-  }
 
-  .scopri ul li{
-    font-size: 60%;
-    margin: 10px 15px;
-    padding: 5px;
-  }
-
-  .slot{
-    width: 45%;
-  }
-
-  aside{
-    width: 50px;
-    padding: 0;
-    text-align: center;
-  }
-
-  aside p{
-    display: none;
-  }
-
-  .display-xs{
-   margin: 5% 5% 30% 17%;
- }
-
-
- .display-xs img{
-   display: block;
-   filter: invert(100%);
- }
-
-  .logo img{
-    display: none;
- }
-
- .nav ul li a img{
-   margin-right: 10px;
- }
-
-  .playlist{
-    display: none;
-  }
-
-  .nav-top{
-    height: calc(100% - 100px);
-  }
-
-  .side-bottom{
-    height: 100px;
-  }
-
-  .download{
-    border:none;
-  }
-
-  .content{
-    width: calc(100% - 50px);
-  }
-
-  header{
-    width: calc(100% - 50px);
-    margin-left: 50px;
-  }
-
-  main{
-    height: calc(100% - 50px);
-  }
-
-  footer{
-    height: 50px;
-  }
 
 /* RESPONSIVE SMALL 576 PX */
 @media screen and(max-width: 576px) {
@@ -661,3 +585,126 @@ footer{
   }
 }
 
+/* RESPONSIVE XS <576 PX */
+@media screen and (max-width: 575px) {
+  .scopri-list{
+    height: 100px;
+    align-content: center;
+  }
+
+  .scopri ul li{
+    font-size: 60%;
+    margin: 10px 15px;
+    padding: 5px;
+  }
+
+  .slot{
+    width: 45%;
+    font-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  aside{
+    width: 50px;
+    padding: 0;
+    text-align: center;
+  }
+
+  aside p{
+    display: none;
+  }
+
+  .display-xs{
+   margin: 5% 5% 30% 17%;
+ }
+
+
+ .display-xs img{
+   display: block;
+   filter: invert(100%);
+ }
+
+  .logo img{
+    display: none;
+ }
+
+ .nav ul li a img{
+   margin-right: 10px;
+ }
+
+  .playlist{
+    display: none;
+  }
+
+  .nav-top{
+    height: calc(100% - 140px);
+  }
+
+  .side-bottom{
+    height: 140px;
+  }
+
+  .download{
+    border:none;
+  }
+
+  .content{
+    width: calc(100% - 50px);
+  }
+
+  header{
+    width: calc(100% - 50px);
+    margin-left: 50px;
+  }
+
+  main{
+    height: calc(100% - 80px);
+  }
+
+  footer{
+    height: 80px;
+    flex-shrink: 2;
+    font-size: 80%;
+  }
+
+  .footer-left{
+    width: 29%;
+  }
+
+  .icons{
+    margin: 0;
+  }
+
+  .icons ul{
+    flex-direction: column;
+  }
+
+  .footer-center{
+    width: 30%;
+  }
+
+  .footer-right{
+    width: 30%;
+  }
+
+  .footer-right ul{
+    margin-left: 15px;
+  }
+
+  .footer-right ul li {
+    padding: 5px;
+  }
+
+  #progress-right {  
+    width: 80%;
+ }
+
+ .img-player {
+   margin-right: -25px;
+ }
+
+ #progress-right {
+   margin-left: 3%;
+ }
+
+}
