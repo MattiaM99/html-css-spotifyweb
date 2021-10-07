@@ -80,8 +80,13 @@ aside{
   margin-left: 5%;
   margin-bottom: 8%;
 }
+
 .logo img{
   width: 80%;
+}
+
+.display-xs img{
+  display: none;
 }
 
 .nav-top{
@@ -97,7 +102,7 @@ aside{
   padding-left: 15px;
 }
 
-.nav ul li a{
+.nav ul li a {
   text-decoration: none;
   color: #A3A3A3;
 }
@@ -509,6 +514,89 @@ footer{
   }
 }
 
+/* RESPONSIVE XS <576 PX */
+@media screen and (max-width: 575px) {
+  .scopri-list{
+    height: 100px;
+    align-content: center;
+  }
+
+  .scopri ul li{
+    font-size: 60%;
+    margin: 10px 15px;
+    padding: 5px;
+  }
+
+  .slot{
+    width: 45%;
+  }
+
+  aside{
+    width: 50px;
+    padding: 0;
+    text-align: center;
+  }
+
+  aside p{
+    display: none;
+  }
+
+  .display-xs{
+   margin: 5% 5% 30% 17%;
+ }
+
+
+ .display-xs img{
+   display: block;
+   filter: invert(100%);
+ }
+
+  .logo img{
+    display: none;
+ }
+
+ .nav ul li a img{
+   margin-right: 10px;
+ }
+
+  .playlist{
+    display: none;
+  }
+
+  .nav-top{
+    height: calc(100% - 100px);
+  }
+
+  .side-bottom{
+    height: 100px;
+  }
+
+  .download{
+    border:none;
+  }
+
+  .content{
+    width: calc(100% - 50px);
+  }
+
+  header{
+    width: calc(100% - 50px);
+    margin-left: 50px;
+  }
+
+  main{
+    height: calc(100% - 50px);
+  }
+
+  footer{
+    height: 50px;
+  }
+
+/* RESPONSIVE SMALL 576 PX */
+@media screen and(max-width: 576px) {
+ 
+}
+
 /* RESPONSIVE MD 768PX */
 @media screen and (max-width: 768px) {
   .scopri-list{
@@ -573,7 +661,3 @@ footer{
   }
 }
 
-/* RESPONSIVE SMALL 576 PX */
-@media screen and(max-width: 576px) {
-  
-}
