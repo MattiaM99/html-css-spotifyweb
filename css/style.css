@@ -109,6 +109,10 @@ aside{
   color: white;
 }
 
+.playlist{
+  margin-left: 10px;
+}
+
 .playlist h2{
   margin: 15% 0 8% 0;
   color: white;
@@ -140,7 +144,6 @@ aside{
 
 .side-bottom ul{
   list-style: none;
-  align-items: flex-end; 
 }
 
 .side-bottom ul li{
@@ -180,8 +183,6 @@ aside{
   display: inline-block;
   color: white;
 }
-
-
 
 /* CONTENUTO */
 .content{
@@ -252,7 +253,6 @@ h1{
 
 .slot img{
   width: 100%;
-  cursor: pointer;
 }
 
 .image-container {
@@ -268,6 +268,8 @@ h1{
   height: 100%;
   display: none;
   color: #FFF;
+  font-size: 200%;
+  cursor: pointer;
 }
 
 .image-container:hover .player {
@@ -275,22 +277,15 @@ h1{
   background: rgba(0, 0, 0, .6);
 }
 
-.fa-play-circle{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-}
-
 .slot h2{
   margin: 10px 0;
   color: white;
-  font-size: 18px;
+  font-size: 95%;
 }
 
 .slot p{
   color: grey;
-  font-size: 10px;
+  font-size: 95%;
 }
 
 .bottom-content{
@@ -369,9 +364,11 @@ footer{
 
 /* FOOTER CENTER */
 .footer-center{
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
   height: 100%;
-  width: 60%;
+  width: 20%;
   display: flex;
 }
 
@@ -380,8 +377,8 @@ footer{
   display: flex;
   justify-content: space-around;
   align-content: center;
-  cursor: pointer;
   align-items: center;
+  margin-bottom: 5%;
 }
 
 .footer-center ul li{
@@ -391,8 +388,35 @@ footer{
 
 .footer-center ul li i{
   font-size: 25px;
+  cursor: pointer;
 }
 
+#progress-center{
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: grey;
+  margin-bottom: 5%;
+}
+
+#progress-center-color{
+  position: absolute;
+  width: 40%;
+  height: 4px;
+  background: white;
+}
+
+#time{
+  position: absolute;
+  left: -50px;
+  top: -7px;
+}
+
+#time-left{
+  position: absolute;
+  right: -50px;
+  top: -7px;
+}
 /* FOOTER RIGHT */
 
 .footer-right{
@@ -408,11 +432,29 @@ footer{
   display: flex;
   justify-content: space-around;
   align-content: center;
-  cursor: pointer;
   align-items: center;
 }
 
 .footer-right ul li{
   text-align: center;
   padding: 15px;
+}
+
+.footer-right ul li i{
+  cursor: pointer;
+}
+
+#progress-right{
+  position: relative;
+  width: 45%;
+  height: 3px;
+  margin-left: 12%;
+  background-color: grey;
+}
+
+#progress-right-color{
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background: white;
 }
