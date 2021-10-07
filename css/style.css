@@ -447,7 +447,7 @@ footer{
 }
 
 .play:hover{
-  font-size: 33px;
+  font-size: 130%;
 }
 
 #progress-center-color:hover{
@@ -498,4 +498,82 @@ footer{
 
 #progress-right-color:hover{
   background-color: #BAF459;
+}
+
+/* RESPONSIVE */
+
+/* CALL-TO-ACTION NASCOSTA DURANTE RIDIMENSIONAMENTO ALTEZZA PAG */
+@media screen and (max-height:189px) {
+  header {
+    display: none;
+  }
+}
+
+/* RESPONSIVE MD 768PX */
+@media screen and (max-width: 768px) {
+  .scopri-list{
+    height: 100px;
+    align-content: center;
+  }
+
+  .scopri ul li{
+    font-size: 60%;
+    margin: 10px 15px;
+    padding: 5px;
+  }
+
+  .slot{
+    width: 20%;
+    font-size: 60%;
+    margin-bottom: 10px;
+  }
+
+  .slot h2{
+    margin: 3px;
+  }
+
+  .main-content{
+    justify-content: flex-start;
+  }
+
+  aside{
+    font-size: 50%;
+  }
+
+  .nav-top{
+    height: calc(100% - 120px);
+  }
+
+  .footer-left{
+    width: 25%;
+  }
+
+  .footer-center{
+    width: 30%;
+  }
+
+  .img-player img{
+    width: 30px;
+  }
+
+  .footer-center ul li i{
+    font-size: 90%;
+  }
+
+  #time{
+    font-size: 60%;
+    left: -40px;
+    top: -3px;
+  }
+  
+  #time-left{
+    font-size: 60%;
+    right: -40px;
+    top: -3px;
+  }
+}
+
+/* RESPONSIVE SMALL 576 PX */
+@media screen and(max-width: 576px) {
+  
 }
